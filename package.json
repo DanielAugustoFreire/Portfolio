@@ -1,0 +1,20 @@
+{
+  "name": "portfoliomvc",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "fazendo meu portfolio para procurar emprego",
+  "main": "server.js",
+  "scripts": {
+    "start": "node swagger.js node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-ejs-layouts": "^2.5.1",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
