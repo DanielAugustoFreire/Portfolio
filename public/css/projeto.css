@@ -1,16 +1,38 @@
 .setar_imagem_projeto {
-    background-image: url(../img/Projeto/zap.jpeg);
-    background-size: contain; /* Faz com que a imagem se ajuste dentro do contêiner sem cortar */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    position: relative;
+    height: 100%; /* Ajusta a altura conforme necessário */
     width: 100%;
-    height: 400px; /* Ajusta a altura conforme necessário */
     color: white;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Necessário para posicionar o texto sobre a imagem */
+    overflow: hidden; /* Impede que a imagem "vaze" do contêiner */
+}
+
+.background-blur {
+    background-image: url(../img/Projeto/zap.jpeg);
+    background-size: cover; /* Ajusta para cobrir todo o contêiner */
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(5px);
+    animation: pulse 5s infinite alternate; /* Animação de pulso */
+    z-index: 0;
+}
+
+@keyframes pulse {
+    0% {
+        filter: blur(1px);
+        transform: scale(1);
+    }
+    100% {
+        filter: blur(3px); /* Aumenta o blur */
+        transform: scale(1.1); /* Aumenta ligeiramente a escala */
+    }
 }
 
 .fonte_elegante {
@@ -19,16 +41,4 @@
     font-style: italic;
     font-size: large;
     z-index: 1; /* Garante que o texto fique acima da imagem de fundo */
-}
-
-/* Adiciona um fundo semi-transparente ao contêiner de texto */
-.setar_imagem_projeto::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.3); /* Ajuste a opacidade conforme necessário */
-    z-index: 0; /* Garante que o fundo fique atrás do texto */
 }
