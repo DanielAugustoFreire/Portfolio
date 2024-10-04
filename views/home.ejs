@@ -1,18 +1,24 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>Demo do Bootstrap</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/carrosel_main.css">
+  <style>
+    .video-container {
+      border: 2px solid #000000; /* Cor da borda */
+      border-radius: 10px; /* Cantos arredondados */
+    }
+  </style>
 </head>
 
 <body>
   <main>
-    <!-- CARROSEL  -->
+    <!-- CARROSSEL  -->
     <div id="myCarousel" class="carousel slide mb-7" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
@@ -25,8 +31,8 @@
           <img src="/img/carrousel/segunda.jpg" width="100%" height="100%">
           <div class="container">
             <div class="carousel-caption text-start botardelay_carrosel">
-              <h1 class="hidden">Linux Enthusiast</h1>
-              <p class="hidden">Veja aqui quais placas de video eu recomendo.</p>
+              <h1 class="hidden">Entusiasta de Linux</h1>
+              <p class="hidden">Veja aqui quais placas de vídeo eu recomendo.</p>
             </div>
           </div>
         </div>
@@ -35,7 +41,7 @@
           <div class="container">
             <div class="carousel-caption hiddenY botardelay_carrosel">
               <h1 class="hiddenY">Daniel Augusto.</h1>
-              <p class="opacity-75 hiddenY">Software Developer</p>
+              <p class="opacity-75 hiddenY">Desenvolvedor de Software</p>
               <p class="hiddenY"><a class="btn btn-lg btn-primary" target="_blank" href="https://github.com/DanielAugustoFreire">Github</a></p>
             </div>
           </div>
@@ -54,86 +60,88 @@
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <span class="visually-hidden">Anterior</span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span class="visually-hidden">Próximo</span>
       </button>
     </div>
-    <!-- CARROSEL  -->
+    <!-- CARROSSEL  -->
 
-
-    
-    
-    <div  class="pricing-header mx-auto text-center mb-5 py-4">
-      <h1 class="display-4 fw-bold text-body-emphasis" style="color: #343a40;">About Me</h1>
-      <p class="lead text-muted">A brief introduction to my background and interests</p>
+    <div class="pricing-header mx-auto text-center mb-5 py-4">
+      <h1 class="display-4 fw-bold text-body-emphasis" style="color: #343a40;">Sobre Mim</h1>
+      <p class="lead text-muted">Uma breve introdução ao meu histórico e interesses</p>
     </div>
-    <hr>
-    <div class="container-fluid marketing p-0 m-0 ">
+    <div class="container-fluid marketing p-0 m-0">
       <div class="row g-0 botardelay">
         <div class="col-lg-4 text-center p-4 hidden">
           <img src="/img/home_abaixo_carrosel/brasil.png" class="rounded-circle" width="140" height="140" alt="">
-          <h2 class="fw-normal">Brazil</h2>
-          <p>I live in Iepê-SP, a small city in the countryside of the state, and I love living here.</p>
+          <h2 class="fw-normal">Brasil</h2>
+          <p>Moro em Iepê-SP, uma pequena cidade no interior do estado, e adoro viver aqui.</p>
         </div>
         <!-- /.col-lg-4 -->
         <div class="col-lg-4 text-center p-4 hidden">
           <img src="/img/home_abaixo_carrosel/drum.jpeg" class="rounded-circle" width="140" height="140" alt="">
-          <h2 class="fw-normal">Drums</h2>
-          <p>I have a passion for playing drums and have been performing at my church for about 8 years now. It’s been a fulfilling journey combining my love for music with my involvement in the community.</p>
-          <p><a class="btn btn-outline-dark" href="#">View details &raquo;</a></p>
+          <h2 class="fw-normal">Bateria</h2>
+          <p>Tenho paixão por tocar bateria e venho me apresentando na minha igreja há cerca de 8 anos. Tem sido uma jornada gratificante combinar meu amor pela música com meu envolvimento na comunidade.</p>
+          <p><a class="navbar-brand" href="#drums">Bateria</a></p>
         </div>
         <!-- /.col-lg-4 -->
         <div class="col-lg-4 text-center p-4 hidden">
           <img src="/img/home_abaixo_carrosel/linux.jpg" class="rounded-circle" width="140" height="140" alt="">
-          <h2 class="fw-normal">Tech</h2>
-          <p>Estou utilizando com mais frequencia distros linux para armazenas servidores web com NodeJs e subindo eles para a internet de modo local via VM</p>
+          <h2 class="fw-normal">Tecnologia</h2>
+          <p>Estou utilizando com mais frequência distros Linux para armazenar servidores web com NodeJs e subindo eles para a internet de modo local via VM.</p>
         </div>
         <!-- /.col-lg-4 -->
       </div>
       <!-- /.row -->
     </div>
-    
-    
-    
-    <!-- >
-      <div class="container">
-        <hr class="featurette-divider">
 
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">Aluno da FIPP - <span
-                class="text-body-secondary">Analise e Desenvolvimento de Sistemas</span></h2>
-            <p class="lead">Formando 2025 no Segundo Semestre.</p>
-          </div>
-          <div class="col-md-5">
-            <img src="/img/fipp.png" class="featurette-image img-fluid my-5" width="500" height="500" alt="">
-          </div>
+    <div class="container">
+      <div class="row featurette" id="fipp">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1"><a class="text-black text-decoration-bold" target="_blank" href="https://www.unoeste.br/fipp">FIPP</a> estudante - <span
+              class="text-body-secondary">Análise e Desenvolvimento de Sistemas</span></h2>
+          <p class="lead">Formando 2025 em Junho</p>
         </div>
-  
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">Sistema de Gerenciamento de emprestimos<span
-                class="text-body-secondary"> - Samsung</span></h2>
-            <p class="lead">Com meu sistema, trouxe uma alavancagem nos emprestimos de cada loja individual da Samsung,
-              portanto, aumentando o aporte financeiro na empresa via emprestimos.</p>
-          </div>
-          <div class="col-md-5">
-            <img src="" class="featurette-image img-fluid my-5" width="500" height="500" alt="">
-          </div>
+        <div class="col-md-5">
+          <img src="/img/fipp.png" class="featurette-image img-fluid my-5" width="500" height="500" alt="">
         </div>
-  
-        <hr class="featurette-divider">
       </div>
-      -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-      <script src="/js/home/home.js"></script>
-    <!-- /.container -->
+
+      <hr>
+
+      <div class="row featurette" id="drums">
+        <div class="col-md-5 d-flex align-items-center my-5">
+          <iframe src="https://www.youtube.com/embed/nCSjWx-U9js" class="my-5" width="480" height="270" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col">
+          <h2 class="featurette-heading">Bateria</h2>
+          <p>Meu pai me ensinou a tocar bateria quando eu tinha 12 anos. Com o tempo, eu peguei o jeito, perdi a vergonha e até me apresentei em um certo show que ocorreu na cidade.</p>
+          <p class="lead">Neste vídeo, estou tocando bateria na igreja. Tocar bateria é uma ótima maneira de relaxar e pensar matematicamente.</p>
+        </div>
+      </div>
+      <!--
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Sistema de Gerenciamento de Empréstimos<span
+              class="text-body-secondary"> - Samsung</span></h2>
+          <p class="lead">Com meu sistema, trouxe uma alavancagem nos empréstimos de cada loja individual da Samsung,
+            portanto, aumentando o aporte financeiro na empresa via empréstimos.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="" class="featurette-image img-fluid my-5" width="500" height="500" alt="">
+        </div>
+      </div>
+      <hr class="featurette-divider">
+    </div>
+  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+    <script src="/js/home/home.js"></script>
   </main>
 </body>
-
 </html>

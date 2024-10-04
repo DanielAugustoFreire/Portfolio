@@ -42,3 +42,30 @@
     font-size: large;
     z-index: 1; /* Garante que o texto fique acima da imagem de fundo */
 }
+
+#floating-ai-icon {
+    position: fixed;
+    bottom: 2vh; /* 2% da altura da viewport */
+    right: 2vw;  /* 2% da largura da viewport */
+    width: 6vw;  /* 6% da largura da viewport */
+    height: 6vw; /* 6% da largura da viewport */
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: width 0.10s ease, height 0.3s ease, transform 0.3s ease; /* Adiciona transição suave */
+}
+
+#floating-ai-icon img {
+    width: 100%;  /* 100% da largura do contêiner */
+    height: 100%; /* 100% da altura do contêiner */
+}
+
+#floating-ai-icon:hover {
+    width: 7vw; 
+    height: 7vw;
+}
